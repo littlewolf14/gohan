@@ -11,6 +11,27 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+.custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(16,23,25,0.85);
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.custom-modal-content {
+  background: var(--surface-color);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  padding: 22px 17px;
+  min-width: 260px;
+  max-width: 70%;
+  text-align: center;
+}
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Libre Baskerville",  sans-serif;
@@ -133,7 +154,6 @@ h6 {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
   border-top-color: var(--surface-color);
   animation: php-email-form-loading 1s linear infinite;
 }
@@ -517,7 +537,6 @@ h6 {
 
 .footer .social-links a:hover {
   color: var(--accent-color);
-  border-color: var(--accent-color);
 }
 
 .footer h4 {
@@ -600,7 +619,6 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -921,7 +939,6 @@ section,
   background-color: transparent;
   color: var(--accent-color);
   transform: translateY(-3px);
-  border-color: var(--accent-color);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -1073,7 +1090,6 @@ section,
   width: 70px;
   height: 70px;
   object-fit: cover;
-  border: 3px solid var(--accent-color);
 }
 
 .about .about-content .chef-signature .chef-message {
@@ -1888,7 +1904,6 @@ section,
 .book-a-table .reservation-form-wrapper input:focus,
 .book-a-table .reservation-form-wrapper select:focus,
 .book-a-table .reservation-form-wrapper textarea:focus {
-  border-color: var(--accent-color);
   box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--accent-color), transparent 80%);
 }
 
@@ -2081,7 +2096,6 @@ section,
 .location .cta-wrapper a.btn-contact {
   background-color: transparent;
   color: var(--accent-color);
-  border: 1px solid var(--accent-color);
 }
 
 .location .cta-wrapper a.btn-contact:hover {
@@ -2416,7 +2430,6 @@ section,
   padding: 8px 25px;
   border-radius: 30px;
   font-weight: 600;
-  border: 2px solid var(--accent-color);
   transition: all 0.3s ease;
 }
 
@@ -2562,7 +2575,7 @@ section,
 }
 
 .contact .contact-form-wrapper .form-group .input-with-icon .form-control:focus {
-  border-color: var(--accent-color);
+ 
   box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--accent-color), transparent 90%);
 }
 
@@ -2573,7 +2586,6 @@ section,
 .contact .contact-form-wrapper .form-group .input-with-icon textarea.form-control {
   height: 180px;
   resize: none;
-  padding-top: 15px;
 }
 
 .contact .contact-form-wrapper .btn-submit {
@@ -2662,4 +2674,25 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.custom-modal-content .event-meta i {
+  color: var(--accent-color) !important;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+/* Botón Detalles con borde naranja */
+.btn-details {
+  border: 2px solid var(--accent-color) !important;
+  color: var(--accent-color) !important;
+  border-radius: 30px;
+  padding: 0.5em 1.6em;
+  font-weight: 600;
+  background: transparent;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-details:hover, .btn-details:focus {
+  background: var(--accent-color);
+  color: var(--contrast-color) !important;
 }
