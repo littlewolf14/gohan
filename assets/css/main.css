@@ -245,6 +245,24 @@ h6 {
   --background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Adjust the size of the logo image */
+.logo-img {
+  width: 150px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust the size of the logo in the header to its original size */
+.header .logo-img {
+  width: auto; /* Reset to default size */
+  height: auto;
+}
+
+/* Increase the size of the logo in the center */
+.hero .content-wrapper .logo-img {
+  width: 400px; /* Make it larger */
+  height: auto; /* Maintain aspect ratio */
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1452,7 +1470,7 @@ section,
   font-size: 0.7rem;
   padding: 3px 8px;
   background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
-  color: var(--accent-color);
+  color: var (--accent-color);
   border-radius: 20px;
   font-weight: 500;
   display: inline-block;
@@ -2673,9 +2691,7 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+/* Removed empty ruleset for .starter-section */
 
 .custom-modal-content .event-meta i {
   color: var(--accent-color) !important;
